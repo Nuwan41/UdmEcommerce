@@ -1,22 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-12T01:11:26Z" name="Suite" finished-at="2023-07-12T01:11:55Z" duration-ms="29630">
+  <suite started-at="2023-07-17T20:30:54Z" name="Suite" finished-at="2023-07-17T20:31:30Z" duration-ms="36297">
     <groups>
       <group name="Purchase">
-        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@60129b9a]" name="submitOrder" class="nTech.SeleniumFrameworkDesign.SubmitOrderTest"/>
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@26a4842b]" name="submitOrder" class="nTech.SeleniumFrameworkDesign.SubmitOrderTest"/>
       </group> <!-- Purchase -->
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:nTech.SeleniumFrameworkDesign.ErrorValidationsTest@5b080f3a]" name="LoginErrorValidation" class="nTech.SeleniumFrameworkDesign.ErrorValidationsTest"/>
+        <method signature="ErrorValidationsTest.ProductErrorValidation()[pri:0, instance:nTech.SeleniumFrameworkDesign.ErrorValidationsTest@5b080f3a]" name="ProductErrorValidation" class="nTech.SeleniumFrameworkDesign.ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
     </groups>
-    <test started-at="2023-07-12T01:11:26Z" name="Error Validations Test" finished-at="2023-07-12T01:11:26Z" duration-ms="3">
-    </test> <!-- Error Validations Test -->
-    <test started-at="2023-07-12T01:11:26Z" name="Submit Order Test" finished-at="2023-07-12T01:11:55Z" duration-ms="29630">
-      <class name="nTech.SeleniumFrameworkDesign.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@60129b9a]" started-at="2023-07-12T01:11:26Z" name="launchApplication" finished-at="2023-07-12T01:11:38Z" duration-ms="12269" status="PASS">
+    <test started-at="2023-07-17T20:30:54Z" name="Error Validations Test" finished-at="2023-07-17T20:31:20Z" duration-ms="26301">
+      <class name="nTech.SeleniumFrameworkDesign.ErrorValidationsTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nTech.SeleniumFrameworkDesign.ErrorValidationsTest@5b080f3a]" started-at="2023-07-17T20:30:54Z" name="launchApplication" finished-at="2023-07-17T20:31:06Z" duration-ms="12177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@60129b9a]" started-at="2023-07-12T01:11:38Z" name="submitOrder" data-provider="getData" finished-at="2023-07-12T01:11:44Z" duration-ms="6002" status="PASS">
+        <test-method signature="LoginErrorValidation()[pri:0, instance:nTech.SeleniumFrameworkDesign.ErrorValidationsTest@5b080f3a]" started-at="2023-07-17T20:31:06Z" name="LoginErrorValidation" finished-at="2023-07-17T20:31:07Z" duration-ms="1185" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email password.] but found [Incorrect email or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email password.] but found [Incorrect email or password.]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at nTech.SeleniumFrameworkDesign.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:nTech.SeleniumFrameworkDesign.ErrorValidationsTest@5b080f3a]" started-at="2023-07-17T20:31:08Z" name="closeBrowser" finished-at="2023-07-17T20:31:08Z" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nTech.SeleniumFrameworkDesign.ErrorValidationsTest@5b080f3a]" started-at="2023-07-17T20:31:08Z" name="launchApplication" finished-at="2023-07-17T20:31:16Z" duration-ms="7731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="ProductErrorValidation()[pri:0, instance:nTech.SeleniumFrameworkDesign.ErrorValidationsTest@5b080f3a]" started-at="2023-07-17T20:31:16Z" name="ProductErrorValidation" finished-at="2023-07-17T20:31:20Z" duration-ms="4434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductErrorValidation -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:nTech.SeleniumFrameworkDesign.ErrorValidationsTest@5b080f3a]" started-at="2023-07-17T20:31:20Z" name="closeBrowser" finished-at="2023-07-17T20:31:20Z" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- nTech.SeleniumFrameworkDesign.ErrorValidationsTest -->
+    </test> <!-- Error Validations Test -->
+    <test started-at="2023-07-17T20:30:54Z" name="Submit Order Test" finished-at="2023-07-17T20:31:30Z" duration-ms="36297">
+      <class name="nTech.SeleniumFrameworkDesign.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@26a4842b]" started-at="2023-07-17T20:30:54Z" name="launchApplication" finished-at="2023-07-17T20:31:06Z" duration-ms="11454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@26a4842b]" started-at="2023-07-17T20:31:06Z" name="submitOrder" data-provider="getData" finished-at="2023-07-17T20:31:11Z" duration-ms="5356" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +93,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@60129b9a]" started-at="2023-07-12T01:11:44Z" name="closeBrowser" finished-at="2023-07-12T01:11:44Z" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@26a4842b]" started-at="2023-07-17T20:31:11Z" name="closeBrowser" finished-at="2023-07-17T20:31:11Z" duration-ms="56" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@60129b9a]" started-at="2023-07-12T01:11:44Z" name="launchApplication" finished-at="2023-07-12T01:11:50Z" duration-ms="5180" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@26a4842b]" started-at="2023-07-17T20:31:11Z" name="launchApplication" finished-at="2023-07-17T20:31:16Z" duration-ms="5474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@60129b9a]" started-at="2023-07-12T01:11:50Z" name="submitOrder" data-provider="getData" finished-at="2023-07-12T01:11:55Z" duration-ms="5715" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@26a4842b]" started-at="2023-07-17T20:31:16Z" name="submitOrder" data-provider="getData" finished-at="2023-07-17T20:31:22Z" duration-ms="5225" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,7 +112,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@60129b9a]" started-at="2023-07-12T01:11:55Z" name="closeBrowser" finished-at="2023-07-12T01:11:55Z" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@26a4842b]" started-at="2023-07-17T20:31:22Z" name="closeBrowser" finished-at="2023-07-17T20:31:22Z" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@26a4842b]" started-at="2023-07-17T20:31:22Z" name="launchApplication" finished-at="2023-07-17T20:31:29Z" duration-ms="7375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="OrderHistoryTest()[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@26a4842b]" started-at="2023-07-17T20:31:29Z" name="OrderHistoryTest" finished-at="2023-07-17T20:31:30Z" depends-on-methods="nTech.SeleniumFrameworkDesign.SubmitOrderTest.submitOrder" duration-ms="897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistoryTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@26a4842b]" started-at="2023-07-17T20:31:30Z" name="closeBrowser" finished-at="2023-07-17T20:31:30Z" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

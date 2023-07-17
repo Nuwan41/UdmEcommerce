@@ -6,23 +6,27 @@ import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
+//import com.aventstack.extentreports.ExtentReports;
+//import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 import nTech.SeleniumFrameworkDesign.pageobjects.CartPage;
 import nTech.SeleniumFrameworkDesign.pageobjects.ProductCatalogue;
 import nTech.TestComponents.BaseTest;
 
 public class ErrorValidationsTest extends BaseTest {
-
+	
 		@Test(groups= {"ErrorHandling"})
 		public void LoginErrorValidation() throws IOException {		
+		
+		landingPage.loginApplication("nuwan@gmail.com", "JellyBean");	
+//		Assert.assertEquals(landingPage.getErrorMessage(), "Incorrect email or password.");
+		Assert.assertEquals(landingPage.getErrorMessage(), "Incorrect email password.");
 				
+		
+//		Recycle code ByN
 //		String productName="ADIDAS ORIGINAL";		
-		
-		landingPage.loginApplication("nuwan@gmail.com", "JellyBean"); 		
 //		landingPage.getErrorMessage();		
-//		AssertJUnit.assertEquals(landingPage.getErrorMessage(),"Incorrect email or password.");		
-		Assert.assertEquals(landingPage.getErrorMessage(), "Incorrect email or password.");
-		
-	
+//		AssertJUnit.assertEquals(landingPage.getErrorMessage(),"Incorrect email or password.");	
 	}
 		
 		@Test(groups={"ErrorHandling"})

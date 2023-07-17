@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Submit Order Test(failed)">
-    <groups>
-      <run>
-        <include name="Purchase"/>
-      </run>
-    </groups>
+  <listeners>
+    <listener class-name="nTech.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Error Validations Test(failed)">
     <classes>
-      <class name="nTech.SeleniumFrameworkDesign.SubmitOrderTest">
+      <class name="nTech.SeleniumFrameworkDesign.ErrorValidationsTest">
         <methods>
-          <include name="submitOrder"/>
+          <include name="LoginErrorValidation"/>
           <include name="closeBrowser"/>
           <include name="launchApplication"/>
         </methods>
-      </class> <!-- nTech.SeleniumFrameworkDesign.SubmitOrderTest -->
+      </class> <!-- nTech.SeleniumFrameworkDesign.ErrorValidationsTest -->
     </classes>
-  </test> <!-- Submit Order Test(failed) -->
+  </test> <!-- Error Validations Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
