@@ -12,10 +12,11 @@ import org.testng.annotations.Test;
 import nTech.SeleniumFrameworkDesign.pageobjects.CartPage;
 import nTech.SeleniumFrameworkDesign.pageobjects.ProductCatalogue;
 import nTech.TestComponents.BaseTest;
+import nTech.TestComponents.Retry;
 
 public class ErrorValidationsTest extends BaseTest {
 	
-		@Test(groups= {"ErrorHandling"})
+		@Test(groups= {"ErrorHandling"},retryAnalyzer=Retry.class)
 		public void LoginErrorValidation() throws IOException {		
 		
 		landingPage.loginApplication("nuwan@gmail.com", "JellyBean");	
