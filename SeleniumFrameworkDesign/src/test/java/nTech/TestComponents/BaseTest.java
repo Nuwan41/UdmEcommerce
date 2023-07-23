@@ -15,6 +15,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -38,7 +39,10 @@ public class BaseTest {
 //		System.out.println("Path is : "+System.getProperty("user.dir"));
 		prop.load(fis);
 		
-		String browserName=prop.getProperty("browser");
+//		<N> Following code used java Ternary Operator (https://www.w3schools.com/java/java_conditions_shorthand.asp)
+		String browserName=System.getProperty("browser")!=null?System.getProperty("browser"):prop.getProperty("browser");
+		
+//		String browserName=prop.getProperty("browser");
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -48,6 +52,8 @@ public class BaseTest {
 		}
 		else if(browserName.equalsIgnoreCase("firefox")) {
 //			Firefox
+			System.setProperty("webdriver.gecko.driver", "C:\\Nuwan\\Selenium Drivers\\geckodriver\\v0.33.0\\geckodriver.exe");
+			driver=new FirefoxDriver();
 		}
 		else if(browserName.equalsIgnoreCase("edge")) {
 //			Edge
@@ -55,7 +61,8 @@ public class BaseTest {
 			driver=new EdgeDriver();
 		}
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.manage().window().maximize();	
 		
 		return driver;
