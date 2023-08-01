@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 3 failed,  2 skipped,  1 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,  1 skipped,  4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,16 +103,6 @@
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="nTech.SeleniumFrameworkDesign.ErrorValidationsTest" hash-for-method="LoginErrorValidation">LoginErrorValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="nTech.SeleniumFrameworkDesign.ErrorValidationsTest" hash-for-method="ProductErrorValidation">ProductErrorValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="nTech.SeleniumFrameworkDesign.SubmitOrderTest" hash-for-method="submitOrder({password=Jelly@123, product=ADIDAS ORIGINAL, email=nuwan@gmail.com})">submitOrder({password=Jelly@123, product=ADIDAS ORIGINAL, email=nuwan@gmail.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -129,11 +119,6 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="nTech.SeleniumFrameworkDesign.ErrorValidationsTest" hash-for-method="LoginErrorValidation">LoginErrorValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="nTech.SeleniumFrameworkDesign.SubmitOrderTest" hash-for-method="OrderHistoryTest">OrderHistoryTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
@@ -143,6 +128,21 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="nTech.SeleniumFrameworkDesign.SubmitOrderTest" hash-for-method="OrderHistoryTest">OrderHistoryTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="nTech.SeleniumFrameworkDesign.ErrorValidationsTest" hash-for-method="ProductErrorValidation">ProductErrorValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="nTech.SeleniumFrameworkDesign.SubmitOrderTest" hash-for-method="submitOrder({password=Jelly@123, product=ADIDAS ORIGINAL, email=nuwan@gmail.com})">submitOrder({password=Jelly@123, product=ADIDAS ORIGINAL, email=nuwan@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="nTech.SeleniumFrameworkDesign.SubmitOrderTest" hash-for-method="submitOrder({password=Kitkat123, product=ZARA COAT 3, email=nethkantha@gmail.com})">submitOrder({password=Kitkat123, product=ZARA COAT 3, email=nethkantha@gmail.com})</a> <!-- method navigator-link -->
@@ -163,49 +163,6 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">nTech.SeleniumFrameworkDesign.SubmitOrderTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="submitOrder({password=Jelly@123, product=ADIDAS ORIGINAL, email=nuwan@gmail.com})">
-                  </a> <!-- submitOrder({password=Jelly@123, product=ADIDAS ORIGINAL, email=nuwan@gmail.com}) -->
-                  <span class="method-name">submitOrder</span>
-                  <span class="parameters">({password=Jelly@123, product=ADIDAS ORIGINAL, email=nuwan@gmail.com})</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-custom&quot;&gt; is not clickable at point (1681,27) because another element &lt;div class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot;&gt; obscures it
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e1bbea9e-5bc4-4230-9959-22c2dae0319a, clickElement {id=08c303f3-6094-4873-a0df-71c69b843ebc}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:35653, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22076, moz:profile: C:\Users\nuwan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:35653/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on windows (e1bbea9e-5bc4-4230-9959-22c2dae0319a)] -&gt; css selector: button[routerlink*=&apos;cart&apos;]]
-Session ID: e1bbea9e-5bc4-4230-9959-22c2dae0319a
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at nTech.SeleniumFrameworkDesign.AbstractComponents.AbstractComponent.clickCartButton(AbstractComponent.java:64)
-	at nTech.SeleniumFrameworkDesign.SubmitOrderTest.submitOrder(SubmitOrderTest.java:35)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:750)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">nTech.SeleniumFrameworkDesign.ErrorValidationsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -216,72 +173,12 @@ Session ID: e1bbea9e-5bc4-4230-9959-22c2dae0319a
                   <span class="method-name">LoginErrorValidation</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [Incorrect email password.] but found [Incorrect email or password.]
 	at nTech.SeleniumFrameworkDesign.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:24)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:750)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ProductErrorValidation">
-                  </a> <!-- ProductErrorValidation -->
-                  <span class="method-name">ProductErrorValidation</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-custom&quot;&gt; is not clickable at point (1681,27) because another element &lt;div class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating&quot;&gt; obscures it
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [8db5d1e2-c34e-48ce-b636-9e17067babdd, clickElement {id=15a5a8fc-472f-40ad-a11c-795fbecad890}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 115.0.2, moz:accessibilityChecks: false, moz:buildID: 20230710165010, moz:debuggerAddress: 127.0.0.1:15875, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 42644, moz:profile: C:\Users\nuwan\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:15875/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on windows (8db5d1e2-c34e-48ce-b636-9e17067babdd)] -&gt; css selector: button[routerlink*=&apos;cart&apos;]]
-Session ID: 8db5d1e2-c34e-48ce-b636-9e17067babdd
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at nTech.SeleniumFrameworkDesign.AbstractComponents.AbstractComponent.clickCartButton(AbstractComponent.java:64)
-	at nTech.SeleniumFrameworkDesign.ErrorValidationsTest.ProductErrorValidation(ErrorValidationsTest.java:41)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:750)
-... Removed 24 stack frames
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">nTech.SeleniumFrameworkDesign.SubmitOrderTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="OrderHistoryTest">
-                  </a> <!-- OrderHistoryTest -->
-                  <span class="method-name">OrderHistoryTest</span>
-                  <div class="stack-trace">java.lang.Throwable: Method SubmitOrderTest.OrderHistoryTest()[pri:0, instance:nTech.SeleniumFrameworkDesign.SubmitOrderTest@4944252c] depends on not successfully finished methods
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:750)
-... Removed 9 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -295,11 +192,7 @@ Session ID: 8db5d1e2-c34e-48ce-b636-9e17067babdd
                   <span class="method-name">LoginErrorValidation</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [Incorrect email password.] but found [Incorrect email or password.]
 	at nTech.SeleniumFrameworkDesign.ErrorValidationsTest.LoginErrorValidation(ErrorValidationsTest.java:24)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:750)
-... Removed 22 stack frames
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -313,10 +206,40 @@ Session ID: 8db5d1e2-c34e-48ce-b636-9e17067babdd
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="OrderHistoryTest">
+                  </a> <!-- OrderHistoryTest -->
+                  <span class="method-name">OrderHistoryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrder({password=Jelly@123, product=ADIDAS ORIGINAL, email=nuwan@gmail.com})">
+                  </a> <!-- submitOrder({password=Jelly@123, product=ADIDAS ORIGINAL, email=nuwan@gmail.com}) -->
+                  <span class="method-name">submitOrder</span>
+                  <span class="parameters">({password=Jelly@123, product=ADIDAS ORIGINAL, email=nuwan@gmail.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="submitOrder({password=Kitkat123, product=ZARA COAT 3, email=nethkantha@gmail.com})">
                   </a> <!-- submitOrder({password=Kitkat123, product=ZARA COAT 3, email=nethkantha@gmail.com}) -->
                   <span class="method-name">submitOrder</span>
                   <span class="parameters">({password=Kitkat123, product=ZARA COAT 3, email=nethkantha@gmail.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">nTech.SeleniumFrameworkDesign.ErrorValidationsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProductErrorValidation">
+                  </a> <!-- ProductErrorValidation -->
+                  <span class="method-name">ProductErrorValidation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -330,16 +253,16 @@ Session ID: 8db5d1e2-c34e-48ce-b636-9e17067babdd
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;nTech.TestComponents.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Submit Order Test&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Submit Order Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;nTech.SeleniumFrameworkDesign.SubmitOrderTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Submit Order Test --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Error Validations Test&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Error Validations Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;nTech.SeleniumFrameworkDesign.ErrorValidationsTest&quot;/&gt;
     &lt;/classes&gt;
@@ -408,32 +331,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'submitOrder')
 data.setCell(0, 2, 'nTech.SeleniumFrameworkDesign.SubmitOrderTest')
-data.setCell(0, 3, 5512);
+data.setCell(0, 3, 5885);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'submitOrder')
 data.setCell(1, 2, 'nTech.SeleniumFrameworkDesign.SubmitOrderTest')
-data.setCell(1, 3, 3579);
+data.setCell(1, 3, 5831);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'ProductErrorValidation')
 data.setCell(2, 2, 'nTech.SeleniumFrameworkDesign.ErrorValidationsTest')
-data.setCell(2, 3, 3450);
+data.setCell(2, 3, 4619);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'LoginErrorValidation')
-data.setCell(3, 2, 'nTech.SeleniumFrameworkDesign.ErrorValidationsTest')
-data.setCell(3, 3, 981);
+data.setCell(3, 1, 'OrderHistoryTest')
+data.setCell(3, 2, 'nTech.SeleniumFrameworkDesign.SubmitOrderTest')
+data.setCell(3, 3, 1245);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'LoginErrorValidation')
 data.setCell(4, 2, 'nTech.SeleniumFrameworkDesign.ErrorValidationsTest')
-data.setCell(4, 3, 575);
+data.setCell(4, 3, 1237);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'OrderHistoryTest')
-data.setCell(5, 2, 'nTech.SeleniumFrameworkDesign.SubmitOrderTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'LoginErrorValidation')
+data.setCell(5, 2, 'nTech.SeleniumFrameworkDesign.ErrorValidationsTest')
+data.setCell(5, 3, 1226);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -459,90 +382,83 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">nTech.SeleniumFrameworkDesign.ErrorValidationsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">nTech.SeleniumFrameworkDesign.SubmitOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">nTech.SeleniumFrameworkDesign.SubmitOrderTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">201 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">nTech.SeleniumFrameworkDesign.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">LoginErrorValidation</span>
-                <span class="method-start">9134 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">9712 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">10940 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">nTech.SeleniumFrameworkDesign.SubmitOrderTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">submitOrder({password=Jelly@123, product=ADIDAS ORIGINAL, email=nuwan@gmail.com})</span>
-                <span class="method-start">12337 ms</span>
+                <span class="method-start">7828 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">16099 ms</span>
+                <span class="method-start">13666 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">17385 ms</span>
+                <span class="method-start">13802 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">nTech.SeleniumFrameworkDesign.ErrorValidationsTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">LoginErrorValidation</span>
-                <span class="method-start">21255 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">22394 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">23277 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">nTech.SeleniumFrameworkDesign.SubmitOrderTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">submitOrder({password=Kitkat123, product=ZARA COAT 3, email=nethkantha@gmail.com})</span>
-                <span class="method-start">23992 ms</span>
+                <span class="method-start">23532 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">29505 ms</span>
+                <span class="method-start">29417 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">29542 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">OrderHistoryTest</span>
+                <span class="method-start">38453 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">39699 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">nTech.SeleniumFrameworkDesign.ErrorValidationsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">40572 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">ProductErrorValidation</span>
-                <span class="method-start">32788 ms</span>
+                <span class="method-name">LoginErrorValidation</span>
+                <span class="method-start">48023 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">36319 ms</span>
+                <span class="method-start">49249 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">49370 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginErrorValidation</span>
+                <span class="method-start">55762 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">57552 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">57652 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ProductErrorValidation</span>
+                <span class="method-start">69787 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">74407 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

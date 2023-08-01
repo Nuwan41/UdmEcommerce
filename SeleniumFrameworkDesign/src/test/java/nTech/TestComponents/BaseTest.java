@@ -10,10 +10,12 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
@@ -44,10 +46,23 @@ public class BaseTest {
 		
 //		String browserName=prop.getProperty("browser");
 		
-		if(browserName.equalsIgnoreCase("chrome")) {
+		if(browserName.contains("chrome")) {
+
+//			WebDriverManager.chromedriver().setup();
+//			
+//			driver=new ChromeDriver();	
+			
+//			Headless browser code
+			ChromeOptions options=new ChromeOptions();
 			WebDriverManager.chromedriver().setup();
 			
-			driver=new ChromeDriver();			
+			if(browserName.contains("headless")) {
+			options.addArguments("headless");	
+			}
+			
+			driver=new ChromeDriver(options);
+			driver.manage().window().setSize(new Dimension(1440, 900)); //Full Screen
+//			driver.manage().window().setSize(new Dimension(1920, 1200));
 			
 		}
 		else if(browserName.equalsIgnoreCase("firefox")) {
