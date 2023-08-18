@@ -31,7 +31,21 @@ WebDriver driver;
 		
 	}
 	public boolean verifyCartProductMatches(String productName) {
+//		Error Tracking Starts
+//		boolean match2;
+//		System.out.println("<N> Start of Error Tracking Code");
+//		List<WebElement> etsProducts=getCartProductList();
+//		
+//		for(WebElement etsProduct:etsProducts ) {
+//			System.out.println(etsProduct.getText());
+//			match2=etsProduct.getText().contentEquals(productName);
+//			System.out.println("Bolean is"+ match2);
+//		}
+//		System.out.println("<N> End of Error Tracking Code");
+		
+//		Error Tracking Code Addtions end
 		boolean match=getCartProductList().stream().anyMatch(cartProduct->cartProduct.getText().equalsIgnoreCase(productName));		
+		
 		
 		return match;
 	}
@@ -41,6 +55,23 @@ WebDriver driver;
 		CheckoutPage checkoutPage=new CheckoutPage(driver);
 		
 		return checkoutPage;
+	}
+	
+	public void errorhanding_verifyCartProductMatches(String productName) {
+//		Error Tracking Starts
+		
+		boolean match2;
+		System.out.println("<N> Start of Error Tracking Code");
+		List<WebElement> etsProducts=getCartProductList();
+		
+		for(WebElement etsProduct:etsProducts ) {
+			System.out.println(etsProduct.getText());
+			match2=etsProduct.getText().contentEquals(productName);
+			System.out.println("Bolean is"+ match2);
+		}
+		System.out.println("<N> End of Error Tracking Code");
+		
+//		Error Tracking Code Addtions end
 	}
 	
 	

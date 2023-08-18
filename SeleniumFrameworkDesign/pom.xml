@@ -55,8 +55,21 @@
     	<groupId>com.aventstack</groupId>
     	<artifactId>extentreports</artifactId>
     	<version>5.0.9</version>
+	</dependency>	
+	
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-java</artifactId>
+	    <version>7.13.0</version>
 	</dependency>
-
+	
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-testng</artifactId>
+	    <version>7.13.0</version>
+	</dependency>
 
   </dependencies>
   <profiles>
@@ -116,7 +129,27 @@
       		</plugins>
       		</pluginManagement>
       		</build>		  
-	  </profile>		  
+	  </profile>
+	  <profile>
+		  <id>CucumberTests</id>
+			<build>
+    		<pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      		<plugins>		  
+				<plugin>
+        			<groupId>org.apache.maven.plugins</groupId>
+        			<artifactId>maven-surefire-plugin</artifactId>
+        			<version>3.1.2</version>
+        			<configuration>
+          				<includes>
+            				<include>**/TestNGTestRunner.java</include>
+          				</includes>
+        			</configuration>
+      			</plugin>	
+      		</plugins>
+      		</pluginManagement>
+      		</build>		  	  
+	  </profile>
+	  		  
   </profiles>
   
 

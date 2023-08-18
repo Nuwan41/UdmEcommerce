@@ -4,11 +4,24 @@
   <listeners>
     <listener class-name="nTech.TestComponents.Listeners"/>
   </listeners>
+  <test thread-count="5" verbose="0" name="Submit Order Test(failed)">
+    <classes>
+      <class name="nTech.SeleniumFrameworkDesign.SubmitOrderTest">
+        <methods>
+          <include name="submitOrder" invocation-numbers="0 1"/>
+          <include name="closeBrowser"/>
+          <include name="OrderHistoryTest"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- nTech.SeleniumFrameworkDesign.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
   <test thread-count="5" verbose="0" name="Error Validations Test(failed)">
     <classes>
       <class name="nTech.SeleniumFrameworkDesign.ErrorValidationsTest">
         <methods>
           <include name="LoginErrorValidation"/>
+          <include name="ProductErrorValidation"/>
           <include name="closeBrowser"/>
           <include name="launchApplication"/>
         </methods>
